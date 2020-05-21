@@ -27,11 +27,5 @@ class StudentsController < ApplicationController
       @student = Student.find(params[:id])
     end
 
-    def status
-      if set_student.active
-        "active"
-      else
-        "inactive"
-      end
-    end
+
 end
