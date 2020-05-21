@@ -8,6 +8,10 @@ class StudentsController < ApplicationController
   def show
   end
 
+  def activate
+    set_student.active = true
+  end
+
   private
 
     def set_student
